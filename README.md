@@ -21,7 +21,7 @@ Table of Contents
 **Contributors**
 PUPixel is the result of collaborative efforts from a team of passionate web developers and designers. The following contributors have dedicated their time and skills to bring this project to life:
 
-`Calibuso, Marifel P. 
+Calibuso, Marifel P. 
 Candelario, Christian B. 
 Castaneda, Ronn Christopher B. 
 Gabriel, Jorge Mark Vincent U. 
@@ -30,5 +30,5 @@ Sison, Reymar
 Solosa, John Kenly C. 
 GROUP 2 
 BSCS 3-1 
-`
+
 We would like to express our gratitude to all the contributors for their hard work and commitment to making PUPixel a reality.
