@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #571f1e, #10100e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.register-card {
+    background: rgba(255, 255, 255, .5);
+    border: 1px solid #FFFFE3;
+    box-shadow: 0 10px 50px -30px #10100e;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    & a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .column {
+        padding: 3rem;
+
+        &:last-child {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: linear-gradient(90deg, #fefefe, #ffffff82);
+                inset: 0;
+            }
+
+            & * {
+                z-index: 1;
+            }
+    
+            & a {
+                display: inline-block;
+                padding: 12px 30px;
+                font-size: 16px;
+                border: 2px solid #10100e;
+                color: #10100e;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all .3s;
+                font-weight: 600;
+    
+                &:hover {
+                    background-color: #10100e;
+                    color: #FFFFE3;
+                }
+            }
+        }
+        
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    & h1 {
+        margin-bottom: 5px;
+    }
+
+    .form-element {
+        width: 100%;
+        border: none;
+        background-color: #ffffe382;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: box-shadow .2s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #10100e;
+        }
+    }
+
+    & input[type=checkbox] {
+        accent-color: #10100e;
+        width: 16px;
+        height: 16px;
+    }
+
+    & form {
+        margin-top: 3rem ;
+
+        & > * {
+            margin-top: .75rem;
+        }
+
+        & button {
+            background-color: #10100e;
+            color: #FFFFE3;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all .2s;
+
+            &:active {
+                scale: .95;
+                background-color: #571f1e;
+            }
+        }
+
+        .form-checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            margin-left: 5px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 22px;
+        color: #FFFFE3;
+        background-color: #10100e;
+        transition: scale .2s;
+
+        &:hover {
+            scale: .95;
+            background-color: #571f1e;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .register-card {
+        display: block;
+        width: 500px;
+        text-align: center;
+
+        .column {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+}
